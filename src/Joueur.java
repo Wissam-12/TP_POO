@@ -2,8 +2,8 @@ public class Joueur {
     private String nom;
     private long id;
     private int meilleurScore, scoreActuel;
-    private Case position;
-
+    private int position;
+    private Partie partieCourante;
     public Joueur(String nom, long id){
         this.nom = nom;
         this.id = id;
@@ -28,5 +28,21 @@ public class Joueur {
     public void avancer(int p ){}
 
     public void reculer(int p){}
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public void setScoreActuel(int scoreActuel) {
+        this.scoreActuel = scoreActuel;
+    }
+
+    public Partie getPartieCourante() {
+        return partieCourante;
+    }
 }
 

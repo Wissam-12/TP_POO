@@ -8,8 +8,8 @@ public class caseMalus extends Cases{
 
     @Override
     public void actionAssocie(Joueur J) {
-        J.setScoreActuel (getScoreActuel -=10);
-        J.setPosition (getPosition-2);
+        J.setScoreActuel (J.getScoreActuel() -10);
+        J.setPosition (J.getPosition()-2);
     }
 
     public static int getNombreDeCase() {

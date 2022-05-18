@@ -5,13 +5,13 @@ public class caseFin extends Cases{
     }
     @Override
     public void actionAssocie(Joueur J) {
-        if (J.getPosition == 99 ) {
-            partie.setPartieStatus( true );
+        if (J.getPosition() == 99 ) {
+            J.getPartieCourante().setPartieTermine(true);
             System.out.println("Partie Terminé, vous avez gagné");
         }
         else {
-            if (J.getPosition > 99 ){
-                int différence = 99 - J.getPosition;
+            if (J.getPosition() > 99 ){
+                int différence = 99 - J.getPosition();
                 J.setPosition (99 - différence);
             }
         }

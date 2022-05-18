@@ -17,11 +17,11 @@ public class caseImage extends caseQuestion{
         if (rep == bonneRep) gagner(J);
     }
      public void gagner(Joueur J){
-      J.setScoreActuel(J.getScoreActuel + 10);
-      J.setPosition(J.getPosition + 2);
+      J.setScoreActuel(J.getScoreActuel() + 10);
+      J.setPosition(J.getPosition() + 2);
   }
     @Override
-    public void changerQuestion() {
+    public void changerQuestion(Joueur J) {
 
     }
 

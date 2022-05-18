@@ -20,16 +20,17 @@ public class caseDefinition extends caseQuestion{
        else perdu(J);
     }
     public void gagner(Joueur J){
-        J.setScoreActuel(J.getScoreActuel + 20);
-        J.setPosition(J.getPosition + 4);
+        J.setScoreActuel(J.getScoreActuel() + 20);
+        J.setPosition(J.getPosition() + 4);
     }
     public void perdu(Joueur J){
-        J.setScoreActuel(J.getScoreActuel - 10);
+        J.setScoreActuel(J.getScoreActuel() - 10);
     }
     @Override
-    public void changerQuestion() {
-        this.question = Definition[Definition.getLastVisitedIndex+1][0];
-        this.bonneRep = Definition[Definition.getLastVisitedIndex+1][1];
+    public void changerQuestion(Joueur J) {
+        Definition def = J.getPartieCourante().getListDefs();
+        this.question = def.getTableauDefinitions()[def.getLastVisitedIndex()+1][0];
+        this.bonneRep = def.getTableauDefinitions()[def.getLastVisitedIndex()+1][1];
     }
 
     @Override

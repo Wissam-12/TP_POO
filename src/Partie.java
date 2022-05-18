@@ -1,10 +1,20 @@
 public class Partie {
-    Definition listDefs;
-    Plateau plateau;
+   private Definition listDefs;
+   private Plateau plateau;
+   private boolean partieTermine;
 
-    public void nouvellePartie(){
+    public Partie (){
         this.listDefs = new Definition();
         this.plateau = new Plateau();
         plateau.createPlateau();
+        this.partieTermine = false;
+    }
+
+    public void setPartieTermine(boolean partieTermine) {
+        this.partieTermine = partieTermine;
+    }
+
+    public Definition getListDefs() {
+        return listDefs;
     }
 }
