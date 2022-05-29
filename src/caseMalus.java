@@ -1,9 +1,9 @@
 public class caseMalus extends Cases{
-    private static int nombreDeCase = 0 ;
+    // private static int nombreDeCase = 0 ;
     caseMalus (int i){
         this.couleur = Couleur.Rouge;
         this.numCase = i;
-        this.nombreDeCase += 1;
+        // this.nombreDeCase += 1;
     }
 
     @Override
@@ -12,7 +12,11 @@ public class caseMalus extends Cases{
         J.setPosition (J.getPosition()-2);
     }
 
-    public static int getNombreDeCase() {
-        return nombreDeCase;
+    // public static int getNombreDeCase() {
+    //     return nombreDeCase;
+    // }
+
+    public void test(){
+        System.out.println("Case malus");
     }
 }

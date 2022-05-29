@@ -3,14 +3,13 @@ public class caseImage extends caseQuestion{
     private String mot;
     private int rep;
     private int bonneRep;
-    private static int nombreDeCase = 0 ;
+    // private int nombreDeCase = 0 ;
     public caseImage(int i){
         this.couleur = Couleur.Rose;
         this.numCase = i;
         this.visited = false;
-        this.nombreDeCase +=1;
+        // this.nombreDeCase +=1;
     }
-
     @Override
     public void actionAssocie(Joueur J) {
         System.out.println(this.mot);
@@ -30,7 +29,11 @@ public class caseImage extends caseQuestion{
         this.visited = i ;
     }
 
-    public static int getNombreDeCase() {
-        return nombreDeCase;
+    public void test(){
+        System.out.println("Case image");
     }
+
+    // public int getNombreDeCase() {
+    //     return nombreDeCase;
+    // }
 }

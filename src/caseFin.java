@@ -16,4 +16,8 @@ public class caseFin extends Cases{
             }
         }
     }
+
+    public void test(){
+        System.out.println("fin");
+    }
 }

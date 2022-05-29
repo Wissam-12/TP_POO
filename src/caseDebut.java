@@ -5,4 +5,8 @@ public class caseDebut extends Cases{
   }
     public void actionAssocie (Joueur j ){
     }
+
+    public void test(){
+      System.out.println("debut");
+  }
 }

@@ -3,12 +3,12 @@ public class caseDefinition extends caseQuestion{
     private String question;
     private String reponse;
     private String bonneRep;
-    private static int nombreDeCase = 0;
+    // private static int nombreDeCase = 0;
     public caseDefinition (int i){
         this.couleur = Couleur.Bleue;
         this.numCase = i;
         this.visited = false;
-        this.nombreDeCase += 1;
+        // this.nombreDeCase += 1;
     }
 
     @Override
@@ -38,7 +38,11 @@ public class caseDefinition extends caseQuestion{
         this.visited = i ;
     }
 
-    public static int getNombreDeCase() {
-        return nombreDeCase;
+    public void test(){
+        System.out.println("Cases def");
     }
+
+    // public static int getNombreDeCase() {
+    //     return nombreDeCase;
+    // }
 }

@@ -6,7 +6,7 @@ public class Partie {
     public Partie (){
         this.listDefs = new Definition();
         this.plateau = new Plateau();
-        plateau.createPlateau();
+        plateau = new Plateau();
         this.partieTermine = false;
     }
 

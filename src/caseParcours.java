@@ -7,4 +7,8 @@ public class caseParcours extends Cases{
     public void actionAssocie(Joueur J) {
 
     }
+
+    public void test(){
+        System.out.println("Case parcours");
+    }
 }

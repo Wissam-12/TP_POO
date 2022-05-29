@@ -1,12 +1,12 @@
 public class Joueur {
     private String nom;
-    private long id;
+    private String email;
     private int meilleurScore, scoreActuel;
     private int position;
     private Partie partieCourante;
-    public Joueur(String nom, long id){
+    public Joueur(String nom, String email){
         this.nom = nom;
-        this.id = id;
+        this.email = email;
     }
 
     public int getMeilleurScore(){
