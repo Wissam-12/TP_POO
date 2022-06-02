@@ -290,7 +290,7 @@
          </stroke></Rectangle>
       <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="238.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dice1.png" />
+            <Image url="@dice/dice1.png" />
          </image>
       </ImageView>
       <Button layoutX="207.0" layoutY="385.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
@@ -329,7 +329,7 @@
       </TextField>
       <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dice5.png" />
+            <Image url="@dice/dice5.png" />
          </image>
       </ImageView>
       <TextField layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
