@@ -48,7 +48,7 @@
          </font>
       </Text>
       <TextField layoutX="828.0" layoutY="368.0" prefHeight="74.0" prefWidth="348.0" style="-fx-background-radius: 15;" />
-      <Button layoutX="825.0" layoutY="496.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="329.0" style="-fx-background-radius: 20; -fx-background-color: #de84f4;" text="Jouer" textFill="WHITE">
+      <Button layoutX="825.0" layoutY="496.0" mnemonicParsing="false" onAction="#goTo" prefHeight="82.0" prefWidth="329.0" style="-fx-background-radius: 20; -fx-background-color: #de84f4;" text="Jouer" textFill="WHITE">
          <font>
             <Font name="Century Gothic Bold Italic" size="42.0" />
          </font>
