@@ -50,7 +50,7 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <Button layoutX="965.0" layoutY="109.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Depart">
+      <Button layoutX="965.0" layoutY="109.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Start">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font></Button>
@@ -63,7 +63,7 @@
       <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="998.0" layoutY="358.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="993.0" layoutY="349.0" text="99" />
       <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="959.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="955.0" layoutY="350.0" text="98" />
+      <Label layoutX="952.0" layoutY="350.0" text="98" />
       <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="920.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="914.0" layoutY="350.0" text="97" />
       <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="881.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
@@ -132,7 +132,7 @@
       <Label layoutX="1107.0" layoutY="436.0" text="85" />
       <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1073.0" layoutY="451.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1068.0" layoutY="442.0" text="86" />
-      <Button layoutX="1018.0" layoutY="326.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Fin" textFill="#fff1f1">
+      <Button layoutX="1018.0" layoutY="326.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="End" textFill="#fff1f1">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font></Button>
@@ -288,12 +288,12 @@
                </stops>
             </LinearGradient>
          </stroke></Rectangle>
-      <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="238.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice2" fitHeight="164.0" fitWidth="166.0" layoutX="238.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@dice/dice1.png" />
          </image>
       </ImageView>
-      <Button layoutX="207.0" layoutY="385.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
+      <Button fx:id="roll" layoutX="207.0" layoutY="385.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font></Button>
@@ -327,13 +327,13 @@
             <Font name="Verdana" size="30.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice1" fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@dice/dice5.png" />
          </image>
       </ImageView>
-      <TextField layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
-      <TextField layoutX="340.0" layoutY="137.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
-      <TextField layoutX="340.0" layoutY="194.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="userName" editable="false" layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="record" editable="false" layoutX="340.0" layoutY="137.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="score" editable="false" layoutX="340.0" layoutY="194.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
    </children>
 </AnchorPane>
