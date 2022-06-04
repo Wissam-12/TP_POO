@@ -1,14 +1,17 @@
 package com.example.tp;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class Joueur {
     private String nom;
-    private String email;
     private int meilleurScore, scoreActuel;
     private int position;
     private Partie partieCourante;
-    public Joueur(String nom, String email){
+    public Joueur(String nom){
         this.nom = nom;
-        this.email = email;
     }
 
     public int getMeilleurScore(){
@@ -17,6 +20,10 @@ public class Joueur {
 
     public int getScoreActuel(){
         return this.scoreActuel;
+    }
+
+    public String getNom(){
+        return this.nom;
     }
 
     public void setMeilleurScore(int meilleurScore){
@@ -32,7 +39,7 @@ public class Joueur {
     public void reculer(int p){}
 
     public int getPosition() {
-        return position;
+        return this.position;
     }
 
     public void setPosition(int position) {
@@ -45,6 +52,37 @@ public class Joueur {
 
     public Partie getPartieCourante() {
         return partieCourante;
+    }
+
+    public int checkExistence(){
+        BufferedReader br;
+        int ln = 0;
+        boolean exist = false;
+        try {
+            br = new BufferedReader(new FileReader("src/main/java/com/example/tp/listJoueurs.txt"));
+            String line = "%start%";
+            try {
+                while (line != null && !exist) {
+                    if ((this.nom).equals(line)) {
+                        exist = true;
+                    } else {
+                        line = br.readLine();
+                        ln++;
+                    }
+                }
+            } catch (IOException a) {
+                a.printStackTrace();
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Une erreur a été rencontrée !");
+            e.printStackTrace();
+        }
+        if(exist){
+            return ln;
+        }
+        else{
+            return 0;
+        }
     }
 }
 
