@@ -16,7 +16,7 @@
 
 <AnchorPane prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.MainView">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="900.0" layoutX="-1.0" layoutY="1.0" strokeType="INSIDE" width="1500.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cdb7f8" height="900.0" layoutY="1.0" strokeType="INSIDE" width="1500.0">
          <stroke>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -33,239 +33,211 @@
                </stops>
             </LinearGradient>
          </stroke>
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.2235294133424759" green="0.12156862765550613" blue="1.0" opacity="0.5299999713897705" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
       </Rectangle>
-      <Button layoutX="965.0" layoutY="109.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Start">
+      <Button id="c0" contentDisplay="TOP" layoutX="1141.0" layoutY="123.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="76.0" style="-fx-background-color: yellow; -fx-background-radius: 50; -fx-rotate: 120;" text="Start">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font></Button>
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="905.0" layoutY="529.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="899.0" layoutY="520.0" text="61" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="865.0" layoutY="526.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="860.0" layoutY="518.0" text="62" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="825.0" layoutY="522.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="818.0" layoutY="512.0" text="63" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="998.0" layoutY="358.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="993.0" layoutY="349.0" text="99" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="959.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="952.0" layoutY="350.0" text="98" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="920.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="914.0" layoutY="350.0" text="97" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="881.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="875.0" layoutY="349.0" text="96" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="841.0" layoutY="360.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="836.0" layoutY="351.0" text="95" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="809.0" layoutY="383.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="804.0" layoutY="374.0" text="94" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="801.0" layoutY="422.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="796.0" layoutY="413.0" text="93" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="833.0" layoutY="445.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="828.0" layoutY="436.0" text="92" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="873.0" layoutY="449.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="868.0" layoutY="440.0" text="91" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="913.0" layoutY="452.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="908.0" layoutY="443.0" text="90" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="953.0" layoutY="454.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="947.0" layoutY="445.0" text="89" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="993.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="988.0" layoutY="447.0" text="88" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1033.0" layoutY="454.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1028.0" layoutY="445.0" text="87" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="830.0" layoutY="278.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="824.0" layoutY="270.0" text="72" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="791.0" layoutY="283.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="784.0" layoutY="274.0" text="71" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="758.0" layoutY="304.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="751.0" layoutY="296.0" text="70" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="738.0" layoutY="339.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="729.0" layoutY="330.0" text="69" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="726.0" layoutY="376.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="718.0" layoutY="366.0" text="68" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="722.0" layoutY="415.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="715.0" layoutY="406.0" text="67" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="729.0" layoutY="455.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="722.0" layoutY="445.0" text="66" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="753.0" layoutY="487.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="746.0" layoutY="479.0" text="65" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="786.0" layoutY="510.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="780.0" layoutY="501.0" text="64" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="870.0" layoutY="278.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="863.0" layoutY="269.0" text="73" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="910.0" layoutY="279.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="902.0" layoutY="270.0" text="74" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="950.0" layoutY="281.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="944.0" layoutY="272.0" text="75" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="989.0" layoutY="284.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="982.0" layoutY="275.0" text="76" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1028.0" layoutY="287.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1022.0" layoutY="277.0" text="77" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1067.0" layoutY="289.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1063.0" layoutY="280.0" text="78" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1106.0" layoutY="294.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1099.0" layoutY="285.0" text="79" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1176.0" layoutY="398.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1171.0" layoutY="389.0" text="83" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1195.0" layoutY="363.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1190.0" layoutY="354.0" text="82" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1144.0" layoutY="307.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1140.0" layoutY="298.0" text="80" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1179.0" layoutY="326.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1175.0" layoutY="317.0" text="81" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1147.0" layoutY="425.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1142.0" layoutY="416.0" text="84" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1112.0" layoutY="445.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1107.0" layoutY="436.0" text="85" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1073.0" layoutY="451.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1068.0" layoutY="442.0" text="86" />
-      <Button layoutX="1018.0" layoutY="326.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="End" textFill="#fff1f1">
+      <Circle id="c62" accessibleRole="BUTTON" fill="WHITE" layoutX="905.0" layoutY="529.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="899.0" layoutY="520.0" text="63" />
+      <Circle id="c63" accessibleRole="BUTTON" fill="WHITE" layoutX="865.0" layoutY="526.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="860.0" layoutY="518.0" text="64" />
+      <Circle id="c64" accessibleRole="BUTTON" fill="WHITE" layoutX="825.0" layoutY="522.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="818.0" layoutY="512.0" text="65" />
+      <Circle id="c98" accessibleRole="BUTTON" fill="WHITE" layoutX="920.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="914.0" layoutY="350.0" text="99" />
+      <Circle id="c97" accessibleRole="BUTTON" fill="WHITE" layoutX="881.0" layoutY="359.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="875.0" layoutY="349.0" text="98" />
+      <Circle id="c96" accessibleRole="BUTTON" fill="WHITE" layoutX="841.0" layoutY="360.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="836.0" layoutY="351.0" text="97" />
+      <Circle id="95" accessibleRole="BUTTON" fill="WHITE" layoutX="809.0" layoutY="383.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="804.0" layoutY="374.0" text="96" />
+      <Circle id="c94" accessibleRole="BUTTON" fill="WHITE" layoutX="801.0" layoutY="422.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="796.0" layoutY="413.0" text="95" />
+      <Circle id="c93" accessibleRole="BUTTON" fill="WHITE" layoutX="833.0" layoutY="445.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="828.0" layoutY="436.0" text="94" />
+      <Circle id="c92" accessibleRole="BUTTON" fill="WHITE" layoutX="873.0" layoutY="449.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="868.0" layoutY="440.0" text="93" />
+      <Circle id="c91" accessibleRole="BUTTON" fill="WHITE" layoutX="913.0" layoutY="452.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="908.0" layoutY="443.0" text="92" />
+      <Circle id="c90" accessibleRole="BUTTON" fill="WHITE" layoutX="953.0" layoutY="454.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="947.0" layoutY="445.0" text="91" />
+      <Circle id="c89" accessibleRole="BUTTON" fill="WHITE" layoutX="993.0" layoutY="456.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="988.0" layoutY="447.0" text="90" />
+      <Circle id="c88" accessibleRole="BUTTON" fill="WHITE" layoutX="1033.0" layoutY="454.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1028.0" layoutY="445.0" text="89" />
+      <Circle id="c73" accessibleRole="BUTTON" fill="WHITE" layoutX="831.0" layoutY="278.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="824.0" layoutY="270.0" text="74" />
+      <Circle id="c72" accessibleRole="BUTTON" fill="WHITE" layoutX="792.0" layoutY="283.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="784.0" layoutY="274.0" text="73" />
+      <Circle id="c71" accessibleRole="BUTTON" fill="WHITE" layoutX="759.0" layoutY="304.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="751.0" layoutY="296.0" text="72" />
+      <Circle id="c70" accessibleRole="BUTTON" fill="WHITE" layoutX="739.0" layoutY="339.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="729.0" layoutY="330.0" text="71" />
+      <Circle id="c69" accessibleRole="BUTTON" fill="WHITE" layoutX="727.0" layoutY="376.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="718.0" layoutY="366.0" text="70" />
+      <Circle id="c68" accessibleRole="BUTTON" fill="WHITE" layoutX="723.0" layoutY="415.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="715.0" layoutY="406.0" text="69" />
+      <Circle id="c67" accessibleRole="BUTTON" fill="WHITE" layoutX="730.0" layoutY="455.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="722.0" layoutY="445.0" text="68" />
+      <Circle id="c66" accessibleRole="BUTTON" fill="WHITE" layoutX="753.0" layoutY="487.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="746.0" layoutY="479.0" text="67" />
+      <Circle id="c65" accessibleRole="BUTTON" fill="WHITE" layoutX="786.0" layoutY="510.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="780.0" layoutY="501.0" text="66" />
+      <Circle id="c74" accessibleRole="BUTTON" fill="WHITE" layoutX="871.0" layoutY="278.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="863.0" layoutY="269.0" text="75" />
+      <Circle id="c75" accessibleRole="BUTTON" fill="WHITE" layoutX="910.0" layoutY="279.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="902.0" layoutY="270.0" text="76" />
+      <Circle id="c76" accessibleRole="BUTTON" fill="WHITE" layoutX="950.0" layoutY="281.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="944.0" layoutY="272.0" text="77" />
+      <Circle id="c77" accessibleRole="BUTTON" fill="WHITE" layoutX="989.0" layoutY="284.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="982.0" layoutY="275.0" text="78" />
+      <Circle id="c78" accessibleRole="BUTTON" fill="WHITE" layoutX="1028.0" layoutY="287.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1022.0" layoutY="277.0" text="79" />
+      <Circle id="c79" accessibleRole="BUTTON" fill="WHITE" layoutX="1067.0" layoutY="289.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1063.0" layoutY="280.0" text="80" />
+      <Circle id="c80" accessibleRole="BUTTON" fill="WHITE" layoutX="1106.0" layoutY="294.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1099.0" layoutY="285.0" text="81" />
+      <Circle id="c84" accessibleRole="BUTTON" fill="WHITE" layoutX="1176.0" layoutY="398.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1171.0" layoutY="389.0" text="85" />
+      <Circle id="c83" accessibleRole="BUTTON" fill="WHITE" layoutX="1195.0" layoutY="363.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1190.0" layoutY="354.0" text="84" />
+      <Circle id="c81" accessibleRole="BUTTON" fill="WHITE" layoutX="1144.0" layoutY="307.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1140.0" layoutY="298.0" text="82" />
+      <Circle id="c82" accessibleRole="BUTTON" fill="WHITE" layoutX="1179.0" layoutY="326.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1175.0" layoutY="317.0" text="83" />
+      <Circle id="c85" accessibleRole="BUTTON" fill="WHITE" layoutX="1147.0" layoutY="425.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1142.0" layoutY="416.0" text="86" />
+      <Circle id="c86" accessibleRole="BUTTON" fill="WHITE" layoutX="1112.0" layoutY="445.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1107.0" layoutY="436.0" text="87" />
+      <Circle id="c87" accessibleRole="BUTTON" fill="WHITE" layoutX="1073.0" layoutY="451.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1068.0" layoutY="442.0" text="88" />
+      <Button id="c99" layoutX="932.0" layoutY="326.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="82.0" style="-fx-background-color: black; -fx-background-radius: 50; -fx-rotate: 90;" text="End" textFill="#fff1f1">
          <font>
             <Font name="System Bold Italic" size="17.0" />
          </font></Button>
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1022.0" layoutY="532.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1016.0" layoutY="524.0" text="58" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="983.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="977.0" layoutY="523.0" text="59" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="944.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="937.0" layoutY="522.0" text="60" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1061.0" layoutY="534.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1055.0" layoutY="525.0" text="57" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1208.0" layoutY="480.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1202.0" layoutY="471.0" text="53" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1176.0" layoutY="504.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1171.0" layoutY="496.0" text="54" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1140.0" layoutY="521.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1134.0" layoutY="513.0" text="55" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1101.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1095.0" layoutY="522.0" text="56" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1252.0" layoutY="414.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1247.0" layoutY="406.0" text="51" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1258.0" layoutY="375.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1251.0" layoutY="367.0" text="50" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1258.0" layoutY="336.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1252.0" layoutY="328.0" text="49" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1233.0" layoutY="449.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1227.0" layoutY="443.0" text="52" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1076.0" layoutY="204.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1069.0" layoutY="194.0" text="43" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1116.0" layoutY="209.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1110.0" layoutY="200.0" text="44" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1153.0" layoutY="223.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1148.0" layoutY="214.0" text="45" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1187.0" layoutY="243.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1181.0" layoutY="234.0" text="46" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1216.0" layoutY="271.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1210.0" layoutY="260.0" text="47" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1243.0" layoutY="299.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1236.0" layoutY="290.0" text="48" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="875.0" layoutY="203.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="870.0" layoutY="194.0" text="38" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="915.0" layoutY="202.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="908.0" layoutY="195.0" text="39" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="956.0" layoutY="201.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="949.0" layoutY="192.0" text="40" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="996.0" layoutY="201.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="989.0" layoutY="195.0" text="41" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1036.0" layoutY="202.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1029.0" layoutY="192.0" text="42" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="796.0" layoutY="209.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="791.0" layoutY="200.0" text="36" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="757.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="752.0" layoutY="211.0" text="35" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="724.0" layoutY="243.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="717.0" layoutY="234.0" text="34" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="694.0" layoutY="269.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="688.0" layoutY="262.0" text="33" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="836.0" layoutY="205.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="831.0" layoutY="194.0" text="37" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="674.0" layoutY="304.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c59" accessibleRole="BUTTON" fill="WHITE" layoutX="1022.0" layoutY="532.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1016.0" layoutY="524.0" text="60" />
+      <Circle id="c60" accessibleRole="BUTTON" fill="WHITE" layoutX="983.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="977.0" layoutY="523.0" text="61" />
+      <Circle id="c61" accessibleRole="BUTTON" fill="WHITE" layoutX="944.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="937.0" layoutY="522.0" text="62" />
+      <Circle id="c58" accessibleRole="BUTTON" fill="WHITE" layoutX="1061.0" layoutY="534.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1055.0" layoutY="525.0" text="59" />
+      <Circle id="c54" accessibleRole="BUTTON" fill="WHITE" layoutX="1208.0" layoutY="480.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1202.0" layoutY="471.0" text="55" />
+      <Circle id="c55" accessibleRole="BUTTON" fill="WHITE" layoutX="1176.0" layoutY="504.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1171.0" layoutY="496.0" text="56" />
+      <Circle id="c56" accessibleRole="BUTTON" fill="WHITE" layoutX="1140.0" layoutY="521.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1134.0" layoutY="513.0" text="57" />
+      <Circle id="c57" accessibleRole="BUTTON" fill="WHITE" layoutX="1101.0" layoutY="531.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1095.0" layoutY="522.0" text="58" />
+      <Circle id="c52" accessibleRole="BUTTON" fill="WHITE" layoutX="1252.0" layoutY="414.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1247.0" layoutY="406.0" text="53" />
+      <Circle id="c51" accessibleRole="BUTTON" fill="WHITE" layoutX="1258.0" layoutY="375.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1251.0" layoutY="367.0" text="52" />
+      <Circle id="c50" accessibleRole="BUTTON" fill="WHITE" layoutX="1258.0" layoutY="336.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1252.0" layoutY="328.0" text="51" />
+      <Circle id="c53" accessibleRole="BUTTON" fill="WHITE" layoutX="1233.0" layoutY="449.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1227.0" layoutY="443.0" text="54" />
+      <Circle id="c44" accessibleRole="BUTTON" fill="WHITE" layoutX="1076.0" layoutY="204.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1069.0" layoutY="194.0" text="45" />
+      <Circle id="c45" accessibleRole="BUTTON" fill="WHITE" layoutX="1116.0" layoutY="209.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1110.0" layoutY="200.0" text="46" />
+      <Circle id="c46" accessibleRole="BUTTON" fill="WHITE" layoutX="1153.0" layoutY="223.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1148.0" layoutY="214.0" text="47" />
+      <Circle id="c47" accessibleRole="BUTTON" fill="WHITE" layoutX="1187.0" layoutY="243.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1181.0" layoutY="234.0" text="48" />
+      <Circle id="c48" accessibleRole="BUTTON" fill="WHITE" layoutX="1216.0" layoutY="271.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1210.0" layoutY="260.0" text="49" />
+      <Circle id="c49" accessibleRole="BUTTON" fill="WHITE" layoutX="1243.0" layoutY="299.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1236.0" layoutY="290.0" text="50" />
+      <Circle id="c39" accessibleRole="BUTTON" fill="WHITE" layoutX="875.0" layoutY="203.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="870.0" layoutY="194.0" text="40" />
+      <Circle id="c40" accessibleRole="BUTTON" fill="WHITE" layoutX="915.0" layoutY="202.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="908.0" layoutY="195.0" text="41" />
+      <Circle id="c41" accessibleRole="BUTTON" fill="WHITE" layoutX="956.0" layoutY="201.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="949.0" layoutY="192.0" text="42" />
+      <Circle id="c42" accessibleRole="BUTTON" fill="WHITE" layoutX="996.0" layoutY="201.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="989.0" layoutY="195.0" text="43" />
+      <Circle id="c43" accessibleRole="BUTTON" fill="WHITE" layoutX="1036.0" layoutY="202.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1029.0" layoutY="192.0" text="44" />
+      <Circle id="c37" accessibleRole="BUTTON" fill="WHITE" layoutX="796.0" layoutY="209.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="791.0" layoutY="200.0" text="38" />
+      <Circle id="c36" accessibleRole="BUTTON" fill="WHITE" layoutX="757.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="752.0" layoutY="211.0" text="37" />
+      <Circle id="c35" accessibleRole="BUTTON" fill="WHITE" layoutX="724.0" layoutY="243.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="717.0" layoutY="234.0" text="36" />
+      <Circle id="c34" accessibleRole="BUTTON" fill="WHITE" layoutX="694.0" layoutY="269.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="688.0" layoutY="262.0" text="35" />
+      <Circle id="c38" accessibleRole="BUTTON" fill="WHITE" layoutX="836.0" layoutY="205.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="831.0" layoutY="194.0" text="39" />
+      <Circle id="c33" accessibleRole="BUTTON" fill="WHITE" layoutX="674.0" layoutY="304.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="667.0" layoutY="296.0" text="34" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="658.0" layoutY="341.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c32" accessibleRole="BUTTON" fill="WHITE" layoutX="658.0" layoutY="341.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="651.0" layoutY="334.0" text="33" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="650.0" layoutY="380.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c31" accessibleRole="BUTTON" fill="WHITE" layoutX="650.0" layoutY="380.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="642.0" layoutY="371.0" text="32" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="650.0" layoutY="419.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c30" accessibleRole="BUTTON" fill="WHITE" layoutX="650.0" layoutY="419.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="642.0" layoutY="411.0" text="31" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="655.0" layoutY="459.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c29" accessibleRole="BUTTON" fill="WHITE" layoutX="655.0" layoutY="459.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="647.0" layoutY="452.0" text="30" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="671.0" layoutY="496.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c28" accessibleRole="BUTTON" fill="WHITE" layoutX="671.0" layoutY="496.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="665.0" layoutY="488.0" text="29" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="797.0" layoutY="588.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c24" accessibleRole="BUTTON" fill="WHITE" layoutX="797.0" layoutY="588.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="792.0" layoutY="581.0" text="25" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="695.0" layoutY="528.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c27" accessibleRole="BUTTON" fill="WHITE" layoutX="695.0" layoutY="528.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="687.0" layoutY="520.0" text="28" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="726.0" layoutY="553.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c26" accessibleRole="BUTTON" fill="WHITE" layoutX="726.0" layoutY="553.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="719.0" layoutY="546.0" text="27" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="759.0" layoutY="575.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c25" accessibleRole="BUTTON" fill="WHITE" layoutX="759.0" layoutY="575.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="752.0" layoutY="565.0" text="26" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="917.0" layoutY="600.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c21" accessibleRole="BUTTON" fill="WHITE" layoutX="917.0" layoutY="600.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="910.0" layoutY="592.0" text="22" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="877.0" layoutY="597.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c22" accessibleRole="BUTTON" fill="WHITE" layoutX="877.0" layoutY="597.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="872.0" layoutY="589.0" text="23" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="837.0" layoutY="593.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c23" accessibleRole="BUTTON" fill="WHITE" layoutX="837.0" layoutY="593.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="832.0" layoutY="586.0" text="24" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1034.0" layoutY="603.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c18" accessibleRole="BUTTON" fill="WHITE" layoutX="1034.0" layoutY="603.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1028.0" layoutY="595.0" text="19" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="995.0" layoutY="602.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c19" accessibleRole="BUTTON" fill="WHITE" layoutX="995.0" layoutY="602.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="988.0" layoutY="595.0" text="20" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="956.0" layoutY="602.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c20" accessibleRole="BUTTON" fill="WHITE" layoutX="956.0" layoutY="602.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="949.0" layoutY="595.0" text="21" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1074.0" layoutY="603.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c17" accessibleRole="BUTTON" fill="WHITE" layoutX="1074.0" layoutY="603.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1067.0" layoutY="595.0" text="18" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1227.0" layoutY="566.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c13" accessibleRole="BUTTON" fill="WHITE" layoutX="1227.0" layoutY="566.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1220.0" layoutY="558.0" text="14" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1191.0" layoutY="583.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c14" accessibleRole="BUTTON" fill="WHITE" layoutX="1191.0" layoutY="583.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1184.0" layoutY="575.0" text="15" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1154.0" layoutY="598.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c15" accessibleRole="BUTTON" fill="WHITE" layoutX="1154.0" layoutY="598.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1146.0" layoutY="590.0" text="16" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1114.0" layoutY="601.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c16" accessibleRole="BUTTON" fill="WHITE" layoutX="1114.0" layoutY="601.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1106.0" layoutY="593.0" text="17" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1282.0" layoutY="509.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c11" accessibleRole="BUTTON" fill="WHITE" layoutX="1282.0" layoutY="509.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1276.0" layoutY="502.0" text="12" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1254.0" layoutY="537.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c12" accessibleRole="BUTTON" fill="WHITE" layoutX="1254.0" layoutY="537.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1247.0" layoutY="529.0" text="13" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1324.0" layoutY="443.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c9" accessibleRole="BUTTON" fill="WHITE" layoutX="1324.0" layoutY="443.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1318.0" layoutY="434.0" text="10" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1306.0" layoutY="478.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle id="c10" accessibleRole="BUTTON" fill="WHITE" layoutX="1306.0" layoutY="478.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="1300.0" layoutY="469.0" text="11" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1336.0" layoutY="366.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1330.0" layoutY="354.0" prefHeight="24.0" prefWidth="14.0" text="12" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1334.0" layoutY="405.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1328.0" layoutY="396.0" text="13" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1327.0" layoutY="287.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1322.0" layoutY="278.0" text="10" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1333.0" layoutY="326.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1328.0" layoutY="318.0" text="11" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1312.0" layoutY="252.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1306.0" layoutY="243.0" text="09" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1258.0" layoutY="194.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1252.0" layoutY="182.0" prefHeight="24.0" prefWidth="14.0" text="07" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1288.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1282.0" layoutY="210.0" text="08" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1185.0" layoutY="162.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1178.0" layoutY="153.0" text="05" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1222.0" layoutY="177.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1215.0" layoutY="167.0" text="06" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1146.0" layoutY="153.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1138.0" layoutY="143.0" text="04" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1067.0" layoutY="141.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1059.0" layoutY="132.0" text="02" />
-      <Circle accessibleRole="BUTTON" fill="DODGERBLUE" layoutX="1107.0" layoutY="146.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="1100.0" layoutY="137.0" text="03" />
+      <Circle id="c7" accessibleRole="BUTTON" fill="WHITE" layoutX="1336.0" layoutY="366.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1330.0" layoutY="354.0" prefHeight="24.0" prefWidth="14.0" text="08" />
+      <Circle id="c8" accessibleRole="BUTTON" fill="WHITE" layoutX="1334.0" layoutY="405.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1328.0" layoutY="396.0" text="09" />
+      <Circle id="c5" accessibleRole="BUTTON" fill="WHITE" layoutX="1327.0" layoutY="287.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1322.0" layoutY="278.0" text="06" />
+      <Circle id="c6" accessibleRole="BUTTON" fill="WHITE" layoutX="1333.0" layoutY="326.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1328.0" layoutY="318.0" text="07" />
+      <Circle id="c4" accessibleRole="BUTTON" fill="WHITE" layoutX="1312.0" layoutY="252.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1306.0" layoutY="243.0" text="05" />
+      <Circle id="c2" accessibleRole="BUTTON" fill="WHITE" layoutX="1258.0" layoutY="194.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1252.0" layoutY="182.0" prefHeight="24.0" prefWidth="14.0" text="03" />
+      <Circle id="c3" accessibleRole="BUTTON" fill="WHITE" layoutX="1288.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1282.0" layoutY="210.0" text="04" />
+      <Circle id="c1" accessibleRole="BUTTON" fill="WHITE" layoutX="1222.0" layoutY="177.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="1215.0" layoutY="167.0" text="02" />
       <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#fffad4" height="279.0" layoutX="58.0" layoutY="366.0" strokeType="INSIDE" width="375.0">
          <stroke>
             <LinearGradient endX="1.0" endY="1.0">
@@ -282,7 +254,7 @@
                   </Stop>
                   <Stop offset="1.0">
                      <color>
-                        <Color red="1.0" />
+                        <Color red="0.8039215803146362" green="0.7176470756530762" blue="0.9725490212440491" />
                      </color>
                   </Stop>
                </stops>
@@ -293,21 +265,21 @@
             <Image url="@dice/dice1.png" />
          </image>
       </ImageView>
-      <Button fx:id="roll" layoutX="207.0" layoutY="385.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
+      <Button fx:id="roll" layoutX="207.0" layoutY="385.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #cdb7f8;" text="Roll" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font></Button>
-      <Text fill="#f4ff1a" layoutX="58.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User : ">
+      <Text fill="#fffad4" layoutX="58.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User : ">
          <font>
             <Font name="Verdana Bold" size="30.0" />
          </font>
       </Text>
-      <Text fill="#f4ff1a" layoutX="58.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record : ">
+      <Text fill="#fffad4" layoutX="58.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record : ">
          <font>
             <Font name="Verdana Bold" size="30.0" />
          </font>
       </Text>
-      <Text fill="#f4ff1a" layoutX="58.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Score : ">
+      <Text fill="#fffad4" layoutX="58.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Score : ">
          <font>
             <Font name="Verdana Bold" size="30.0" />
          </font>
@@ -322,14 +294,9 @@
             <Font name="Verdana" size="30.0" />
          </font>
       </TextField>
-      <TextField id="currentScore" layoutX="701.0" layoutY="123.0" opacity="0.0" prefHeight="38.0" prefWidth="215.0">
-         <font>
-            <Font name="Verdana" size="30.0" />
-         </font>
-      </TextField>
       <ImageView fx:id="dice1" fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dice/dice5.png" />
+            <Image url="@./dice/dice1.png" />
          </image>
       </ImageView>
       <TextField fx:id="userName" editable="false" layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />

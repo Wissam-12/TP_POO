@@ -6,9 +6,8 @@ public class Joueur {
     private int meilleurScore, scoreActuel;
     private int position;
     private Partie partieCourante;
-    public Joueur(String nom, String email){
+    public Joueur(String nom){
         this.nom = nom;
-        this.email = email;
     }
 
     public int getMeilleurScore(){

@@ -14,10 +14,10 @@ public class Dice {
         try {
             for (int i = 0; i < 15; i++) {
                 j1 = random.nextInt(6) + 1;
-                File file = new File("C:\\Users\\pc\\OneDrive\\Bureau\\TP\\src\\main\\resources\\com\\example\\tp\\dice/dice" + j1 + ".png");
+                File file = new File("src/main/resources/com/example/tp/dice/dice" + j1 + ".png");
                 d1.setImage(new Image(file.toURI().toString()));
                 j2 = random.nextInt(6) + 1;
-                file = new File("C:\\Users\\pc\\OneDrive\\Bureau\\TP\\src\\main\\resources\\com\\example\\tp\\dice/dice" + j2 + ".png");
+                file = new File("src/main/resources/com/example/tp/dice/dice" + j2 + ".png");
                 d2.setImage(new Image(file.toURI().toString()));
                 Thread.sleep(50);
             }

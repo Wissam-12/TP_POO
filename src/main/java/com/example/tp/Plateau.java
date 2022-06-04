@@ -58,6 +58,9 @@ public class Plateau {
                         testIt = false;
                     }
                 }
+                else {
+                    testIt = false;
+                }
             }
             this.plateau[cases.get(pos)] = new caseMalus(cases.get(pos));
             cases.remove(pos);
