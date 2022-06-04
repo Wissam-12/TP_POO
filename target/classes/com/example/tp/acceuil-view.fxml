@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="787.5" prefWidth="1400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.tp.AcceuilView">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="811.0" stroke="BLACK" strokeType="INSIDE" width="1408.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="811.0" layoutX="-11.0" stroke="BLACK" strokeType="INSIDE" width="1408.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -32,25 +32,23 @@
             </LinearGradient>
          </fill>
       </Rectangle>
-      <ImageView fitHeight="638.0" fitWidth="634.0" layoutX="31.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="1012.0" fitWidth="1495.0" layoutY="-186.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@goose.png" />
+            <Image url="@background.png" />
          </image>
       </ImageView>
-      <Text fill="#731212" layoutX="665.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Goose Game" wrappingWidth="681.7390441894531">
+      <Text fill="#adefd1" layoutX="446.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Goose Game" wrappingWidth="681.7390441894531">
          <font>
-            <Font name="Rockwell" size="50.0" />
+            <Font name="Segoe UI" size="48.0" />
          </font>
       </Text>
-      <Text fill="#ae29e382" layoutX="906.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register : ">
+      <TextField fx:id="userNameField" alignment="CENTER" layoutX="574.0" layoutY="389.0" prefHeight="74.0" prefWidth="348.0" promptText="Enter name" style="-fx-background-radius: 15;">
          <font>
-            <Font name="Century Gothic Bold Italic" size="46.0" />
-         </font>
-      </Text>
-      <TextField fx:id="userNameField" layoutX="828.0" layoutY="368.0" prefHeight="74.0" prefWidth="348.0" style="-fx-background-radius: 15;" />
-      <Button fx:id="userNameSubmission" layoutX="825.0" layoutY="496.0" mnemonicParsing="false" onAction="#submit" prefHeight="82.0" prefWidth="329.0" style="-fx-background-radius: 20; -fx-background-color: #de84f4;" text="Continuez" textFill="WHITE">
+            <Font size="36.0" />
+         </font></TextField>
+      <Button fx:id="userNameSubmission" alignment="CENTER" contentDisplay="CENTER" layoutX="583.0" layoutY="498.0" mnemonicParsing="false" onAction="#submit" prefHeight="82.0" prefWidth="329.0" style="-fx-background-radius: 20; -fx-background-color: #adefd1;" text="Continuez" textFill="WHITE">
          <font>
-            <Font name="Century Gothic Bold Italic" size="42.0" />
+            <Font name="Segoe UI" size="42.0" />
          </font>
       </Button>
    </children>

@@ -1,7 +1,5 @@
 package com.example.tp;
 
-
-
 import java.util.*;
 
 public class Plateau {
@@ -57,6 +55,9 @@ public class Plateau {
                     if ((plateau[cases.get(pos) - 2].couleur != Couleur.Vert) & (plateau[cases.get(pos) - 2].couleur != Couleur.Rose)){
                         testIt = false;
                     }
+                }
+                else{
+                    testIt = false;
                 }
             }
             this.plateau[cases.get(pos)] = new caseMalus(cases.get(pos));
