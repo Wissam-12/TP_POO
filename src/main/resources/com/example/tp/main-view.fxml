@@ -288,12 +288,12 @@
                </stops>
             </LinearGradient>
          </stroke></Rectangle>
-      <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="238.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice2" fitHeight="164.0" fitWidth="166.0" layoutX="238.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@dice/dice1.png" />
          </image>
       </ImageView>
-      <Button layoutX="207.0" layoutY="385.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
+      <Button fx:id="roll" layoutX="207.0" layoutY="385.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="40.0" prefWidth="82.0" style="-fx-background-radius: 10; -fx-background-color: #391fff;" text="Roll" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font></Button>
@@ -327,13 +327,13 @@
             <Font name="Verdana" size="30.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice1" fitHeight="164.0" fitWidth="166.0" layoutX="82.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@dice/dice5.png" />
+            <Image url="@./dice/dice1.png" />
          </image>
       </ImageView>
-      <TextField editable="false" layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
-      <TextField editable="false" layoutX="340.0" layoutY="137.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
-      <TextField editable="false" layoutX="340.0" layoutY="194.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="userName" editable="false" layoutX="340.0" layoutY="78.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="record" editable="false" layoutX="340.0" layoutY="137.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="score" editable="false" layoutX="340.0" layoutY="194.0" prefHeight="43.0" prefWidth="203.0" style="-fx-background-radius: 20;" />
    </children>
 </AnchorPane>
