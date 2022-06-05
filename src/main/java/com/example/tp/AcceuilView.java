@@ -49,6 +49,7 @@ public class AcceuilView {
                     joueur.setScoreActuel(Integer.parseInt(line));
                     line = br.readLine();
                     joueur.setPosition(Integer.parseInt(line));
+                    line = br.readLine();
                 } catch (IOException a) {
                     a.printStackTrace();
                 }
@@ -61,7 +62,7 @@ public class AcceuilView {
             joueur.setMeilleurScore(0);
             joueur.setPosition(0);
             joueur.setScoreActuel(0);
-            BufferedWriter myWriter = new BufferedWriter(new FileWriter("src/main/java/com/example/tp/listJoueurs.txt"));
+            BufferedWriter myWriter = new BufferedWriter(new FileWriter("src/main/java/com/example/tp/listJoueurs.txt", true));
             myWriter.write(joueur.getNom());
             myWriter.newLine();
             myWriter.write("0");
@@ -69,6 +70,8 @@ public class AcceuilView {
             myWriter.write("0");
             myWriter.newLine();
             myWriter.write("0");
+            myWriter.newLine();
+            myWriter.write("false");
             myWriter.newLine();
             myWriter.close();
         }

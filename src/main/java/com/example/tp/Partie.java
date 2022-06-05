@@ -1,12 +1,11 @@
 package com.example.tp;
 
 public class Partie {
-    private Joueur joueur;
     private Definition listDefs;
     private Plateau plateau;
     private boolean partieTermine;
 
-    public Partie(Joueur j){
+    public Partie(){
         this.listDefs = new Definition();
         this.plateau = new Plateau();
         this.partieTermine = false;

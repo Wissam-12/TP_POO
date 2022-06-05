@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="787.5" prefWidth="1400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml fx:controller="com.example.tp.DefController">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#00203f" height="811.0" layoutX="-13.0" stroke="BLACK" strokeType="INSIDE" width="1408.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#00203f" height="93.0" layoutX="539.0" layoutY="338.0" stroke="#adefd1" strokeWidth="4.0" width="454.0" />
+      <Label fx:id="bestUser" layoutX="570.0" layoutY="363.0" text="First User" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="bestUserScore" layoutX="901.0" layoutY="370.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="34.0" layoutX="943.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dollar.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="656.0" layoutY="75.0" text="Best Score" textFill="#adefd1">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
