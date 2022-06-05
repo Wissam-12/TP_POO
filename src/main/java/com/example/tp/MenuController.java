@@ -106,7 +106,8 @@ public class MenuController {
         caseDefinition def = new caseDefinition(1);
         def.setQuestion("What is my name");
         def.setBonneRep("Wissam");
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
+        // FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("definition.fxml"));
         try {
             root = loader.load();
         } catch (IOException e) {
@@ -120,10 +121,10 @@ public class MenuController {
         img.setImage2("images/carrot.jpg");
         img.setImage3("images/lemon.jpg");
         img.setQuestion("Find the Apple");
-        ImagesController questionImg = loader.getController();
-        questionImg.displayImage(img);
-        // DefController defQ = loader.getController();
-        // defQ.displayQuestion(def);
+        // ImagesController questionImg = loader.getController();
+        // questionImg.displayImage(img);
+        DefController defQ = loader.getController();
+        defQ.displayQuestion(def);
         stage = new Stage();
         scene = new Scene(root);
         stage.setScene(scene);
