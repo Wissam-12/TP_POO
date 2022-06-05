@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.scene.shape.Circle;
 
@@ -19,14 +20,22 @@ public class MenuController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-
+    private Partie partie;
+    private Joueur joueur ;
+     public void getJoueur (Joueur joueur ){
+         this.joueur =joueur ;
+     }
     public void jouer(ActionEvent e) throws IOException {
-        System.out.println("yesss");
-        root = FXMLLoader.load(getClass().getResource("main-view.fxml"));
+       FXMLLoader loader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+       root = loader.load();
+       MainView mainView = loader.getController();
+        mainView.displayUserName(joueur);
+        mainView.displayScore(joueur);
+        mainView.displayRecord(joueur);
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        Plateau Plateau = new Plateau();
-        Cases[] plateau = Plateau.getPlateau();
+        partie = new Partie(joueur);
+        Cases[] plateau = partie.getPlateau().getPlateau();
         for (int i = 1; i < 99; i++) {
             if (plateau[i].couleur == Couleur.Rose) {
                 ((Circle)scene.lookup("#c" + i)).setStyle("-fx-fill : pink ;");
@@ -50,6 +59,8 @@ public class MenuController {
                 ((Circle)scene.lookup("#c" + i)).setStyle("-fx-fill : red ;");
             }
         }
+        mainView.getPartie(partie);
+        mainView.setScene(scene);
         stage.setScene(scene);
         stage.show();
     }
@@ -65,4 +76,5 @@ public class MenuController {
     public void displayScore(Joueur joueur){
         userScore.setText(Integer.toString(joueur.getScoreActuel()));
     }
+
 }

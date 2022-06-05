@@ -34,9 +34,13 @@ public class Joueur {
         this.scoreActuel = this.scoreActuel + points;
     }
 
-    public void avancer(int p ){}
+    public void avancer(int p ){
+        setPosition(this.position+p);
+    }
 
-    public void reculer(int p){}
+    public void reculer(int p){
+        setPosition(this.position-p);
+    }
 
     public int getPosition() {
         return this.position;
@@ -84,5 +88,6 @@ public class Joueur {
             return 0;
         }
     }
+
 }
 
