@@ -6,8 +6,3 @@ Wissam
 0
 0
 0
-
-0
-0
-0
-false

@@ -22,15 +22,16 @@ public class AcceuilView {
     private TextField userNameField;
     private Button userNameSubmission;
 
+
     String userName;
 
     private Stage stage;
     private Scene scene;
     private Parent root;
-
+    private Joueur joueur;
    public void submit(ActionEvent event) throws IOException {
         userName = userNameField.getText();
-        Joueur joueur = new Joueur(userName);
+        joueur = new Joueur(userName);
         int userline = joueur.checkExistence();
         if( userline != 0){
             BufferedReader br;
@@ -77,8 +78,8 @@ public class AcceuilView {
         }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
         root = loader.load();
-
         MenuController menu = loader.getController();
+        menu.getJoueur(joueur);
         menu.displayScore(joueur);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
