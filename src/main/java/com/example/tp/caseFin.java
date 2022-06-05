@@ -11,12 +11,6 @@ public class caseFin extends Cases {
             J.getPartieCourante().setPartieTermine(true);
             System.out.println("Partie Terminé, vous avez gagné");
         }
-        else {
-            if (J.getPosition() > 99 ){
-                int différence = 99 - J.getPosition();
-                J.setPosition (99 - différence);
-            }
-        }
     }
 
     public void test(){
