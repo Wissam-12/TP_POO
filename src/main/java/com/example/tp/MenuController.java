@@ -118,9 +118,7 @@ public class MenuController {
     }
 
     public void definition(){
-        caseDefinition def = new caseDefinition(1);
-        def.setQuestion("What is my name");
-        def.setBonneRep("Wissam");
+        
         FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
         // FXMLLoader loader = new FXMLLoader(getClass().getResource("definition.fxml"));
         try {
@@ -130,14 +128,7 @@ public class MenuController {
             e.printStackTrace();
         }
 
-        caseImage img = new caseImage(2);
-        img.setImage0("images/apple.jpg");
-        img.setImage1("images/banana.jpg");
-        img.setImage2("images/carrot.jpg");
-        img.setImage3("images/lemon.jpg");
-        img.setQuestion("Find the Apple");
-        ImagesController questionImg = loader.getController();
-        questionImg.displayImage(img);
+        
         // DefController defQ = loader.getController();
         // defQ.displayQuestion(def);
         stage = new Stage();

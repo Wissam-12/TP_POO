@@ -1,5 +1,12 @@
 package com.example.tp;
 
+import java.io.IOException;
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 public class caseImage extends caseQuestion {
     private String image0,image1,image2,image3;
     private String question;
@@ -14,7 +21,27 @@ public class caseImage extends caseQuestion {
     }
     @Override
     public void actionAssocie(Joueur J) {
-        if (rep == bonneRep) gagner(J);
+        // if (rep == bonneRep) gagner(J);
+        System.out.println("je suis dans image");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
+        Parent root;
+        caseImage img = new caseImage(2);
+        img.setImage0("images/apple.jpg");
+        img.setImage1("images/banana.jpg");
+        img.setImage2("images/carrot.jpg");
+        img.setImage3("images/lemon.jpg");
+        img.setQuestion("Find the Apple");
+        try {
+            root = loader.load();
+            ImagesController questionImg = loader.getController();
+            questionImg.displayImage(img);
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     public void gagner(Joueur J){
         J.setScoreActuel(J.getScoreActuel() + 10);

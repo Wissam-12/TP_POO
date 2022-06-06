@@ -1,5 +1,12 @@
 package com.example.tp;
 
+import java.io.IOException;
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 public class caseDefinition extends caseQuestion {
     private String question;
     private String bonneRep;
@@ -18,6 +25,23 @@ public class caseDefinition extends caseQuestion {
         // this.reponse = sc.nextLine();
         // if (reponse.equalsIgnoreCase(bonneRep)) gagner(J);
         // else perdu(J);
+        System.out.println("je suis dans def");
+        caseDefinition def = new caseDefinition(1);
+        def.setQuestion("What is my name");
+        def.setBonneRep("Wissam");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("definition.fxml"));
+        Parent root;
+        try {
+            root = loader.load();
+            DefController defQ = loader.getController();
+            defQ.displayQuestion(def);
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public String getQuestion(){

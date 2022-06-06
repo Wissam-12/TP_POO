@@ -149,6 +149,16 @@ public class MainView {
                     pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
                     pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
                 }
+                if (plateau[joueur.getPosition()].couleur==Couleur.Bleue){
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
+                if (plateau[joueur.getPosition()].couleur==Couleur.Rose){
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
                 else {
                     plateau[joueur.getPosition()].actionAssocie(joueur);
                     pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
@@ -164,6 +174,7 @@ public class MainView {
         else {
             alert.setTitle("Wrong destination");
             alert.setContentText("Your new position should be the position number "+posVirtuel);
+            alert.showAndWait();
         }
 
 
