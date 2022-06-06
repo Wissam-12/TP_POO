@@ -8,10 +8,10 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="787.5" prefWidth="1400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.tp.MenuController">
+<AnchorPane prefHeight="787.5" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp.MenuController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00203f" height="811.0" layoutX="-5.0" onDragDetected="#desconnect" stroke="BLACK" strokeType="INSIDE" width="1408.0" />
-      <Button fx:id="userNameSubmission1" alignment="CENTER" contentDisplay="CENTER" layoutX="538.0" layoutY="248.0" mnemonicParsing="false" onAction="#jouer" prefHeight="82.0" prefWidth="420.0" style="-fx-background-radius: 20; -fx-background-color: #adefd1;" text="Jouer" textFill="WHITE">
+      <Button fx:id="jouerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="538.0" layoutY="248.0" mnemonicParsing="false" onAction="#jouer" prefHeight="82.0" prefWidth="420.0" style="-fx-background-radius: 20; -fx-background-color: #adefd1;" text="Jouer" textFill="WHITE">
          <font>
             <Font name="Segoe UI" size="42.0" />
          </font>

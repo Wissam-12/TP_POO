@@ -1,6 +1,5 @@
 package com.example.tp;
 
-import java.util.Scanner;
 public class caseDefinition extends caseQuestion {
     private String question;
     private String bonneRep;

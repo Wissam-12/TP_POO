@@ -5,5 +5,9 @@ public abstract class Cases {
     protected int numCase;
     public abstract void actionAssocie (Joueur J);
     public abstract void test();
+
+    public Couleur getCouleur(){
+        return this.couleur;
+    }
 }
 

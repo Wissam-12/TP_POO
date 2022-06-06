@@ -53,7 +53,7 @@ public class ImagesController {
 
     public void select0(){
         ColorAdjust colorAdjust = new ColorAdjust();
-        colorAdjust.setBrightness(0.5);
+        colorAdjust.setBrightness(-0.7);
 
         image1.setEffect(colorAdjust);
         image2.setEffect(colorAdjust);

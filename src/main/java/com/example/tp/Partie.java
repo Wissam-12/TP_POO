@@ -5,9 +5,9 @@ public class Partie {
     private Plateau plateau;
     private boolean partieTermine;
 
-    public Partie(){
+    public Partie(Plateau plat){
         this.listDefs = new Definition();
-        this.plateau = new Plateau();
+        this.plateau = plat;
         this.partieTermine = false;
     }
 
@@ -21,5 +21,9 @@ public class Partie {
 
     public Plateau getPlateau() {
         return plateau;
+    }
+
+    public void setPlateau(Plateau plat){
+        this.plateau = plat;
     }
 }

@@ -9,7 +9,7 @@ public class Definition {
 
     public Definition(){
         this.lastVisitedIndex = -1;
-        File definitions = new File("com/example/tp/definitions.txt");
+        File definitions = new File("src/main/java/com/example/tp/definitions.txt");
         try {
             Scanner reader = new Scanner(definitions);
             for(int i = 0 ; i < 20; i++){

@@ -1,15 +1,15 @@
 package com.example.tp;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.scene.shape.Circle;
@@ -18,15 +18,24 @@ public class MenuController {
     
     @FXML
     Label userScore;
+    @FXML
+    Button jouerButton;
 
     private Stage stage;
     private Scene scene;
     private Parent root;
     private Partie partie;
     private Joueur joueur ;
-     public void getJoueur (Joueur joueur ){
-         this.joueur =joueur ;
-     }
+    private List<Joueur> listJoueurs;
+
+    public void getJoueur (Joueur joueur ){
+        this.joueur =joueur ;
+    }
+
+    public void getListJoueurs(List<Joueur> listJoueurs){
+        this.listJoueurs = listJoueurs;
+    }
+
     public void jouer(ActionEvent e) throws IOException {
        FXMLLoader loader = new FXMLLoader(getClass().getResource("main-view.fxml"));
        root = loader.load();
@@ -36,8 +45,16 @@ public class MenuController {
         mainView.displayRecord(joueur);
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        partie = new Partie();
+        Plateau plat = new Plateau();
+        if(!joueur.getStarted()){
+            plat.newPlateau();
+        }
+        else{
+            plat.setPlateau(joueur.getPartieCourante().getPlateau().getPlateau());
+        }
+        partie = new Partie(plat);
         Cases[] plateau = partie.getPlateau().getPlateau();
+        joueur.setPartieCourrante(partie);
         for (int i = 1; i < 99; i++) {
             if (plateau[i].couleur == Couleur.Rose) {
                 ((Circle)scene.lookup("#c" + i)).setStyle("-fx-fill : pink ;");
@@ -61,7 +78,9 @@ public class MenuController {
                 ((Circle)scene.lookup("#c" + i)).setStyle("-fx-fill : red ;");
             }
         }
-        mainView.getPartie(partie);
+        joueur.setStarted(true);
+        mainView.getPartie(this.joueur);
+        mainView.setListJrs(this.listJoueurs);
         mainView.setScene(scene);
         stage.setScene(scene);
         stage.show();
@@ -76,29 +95,6 @@ public class MenuController {
     }
 
     public void classement (ActionEvent e) throws IOException {
-        String nom = "user";
-        String best;
-        int score = 0;
-        int bestScore = 0;
-        BufferedReader br;
-        Joueur joueur;
-        try {
-            br = new BufferedReader(new FileReader("src/main/java/com/example/tp/listJoueurs.txt"));
-            String line;
-            try {
-                line = br.readLine();
-                nom = line;
-                while(line != null){
-                    line = br.readLine();
-                }
-            } catch (IOException a) {
-                a.printStackTrace();
-            }
-        } catch (FileNotFoundException ex) {
-            System.out.println("Une erreur a été rencontrée !");
-            ex.printStackTrace();
-        }
-        joueur = new Joueur(nom);
         FXMLLoader loader = new FXMLLoader(getClass().getResource("classement.fxml"));
         root = loader.load();
         ClassementController menu = loader.getController();
@@ -113,12 +109,21 @@ public class MenuController {
         userScore.setText(Integer.toString(joueur.getScoreActuel()));
     }
 
+    public void displayLabel(boolean bool){
+        if(bool){
+            jouerButton.setText("Continuez");
+        }
+        else{
+            jouerButton.setText("Jouer");
+        }
+    }
+
     public void definition(){
         caseDefinition def = new caseDefinition(1);
         def.setQuestion("What is my name");
         def.setBonneRep("Wissam");
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("definition.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("images.fxml"));
+        // FXMLLoader loader = new FXMLLoader(getClass().getResource("definition.fxml"));
         try {
             root = loader.load();
         } catch (IOException e) {
@@ -132,10 +137,10 @@ public class MenuController {
         img.setImage2("images/carrot.jpg");
         img.setImage3("images/lemon.jpg");
         img.setQuestion("Find the Apple");
-        // ImagesController questionImg = loader.getController();
-        // questionImg.displayImage(img);
-        DefController defQ = loader.getController();
-        defQ.displayQuestion(def);
+        ImagesController questionImg = loader.getController();
+        questionImg.displayImage(img);
+        // DefController defQ = loader.getController();
+        // defQ.displayQuestion(def);
         stage = new Stage();
         scene = new Scene(root);
         stage.setScene(scene);

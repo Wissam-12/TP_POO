@@ -8,7 +8,9 @@ import java.io.IOException;
 public class Joueur {
     private String nom;
     private int meilleurScore, scoreActuel;
+    private int num;
     private int position;
+    private boolean started;
     private Partie partieCourante;
     public Joueur(String nom){
         this.nom = nom;
@@ -54,40 +56,60 @@ public class Joueur {
         this.scoreActuel = scoreActuel;
     }
 
+    public void setStarted(boolean started){
+        this.started = started;
+    }
+
+    public boolean getStarted(){
+        return this.started;
+    }
+
+    public void setPartieCourrante(Partie partie){
+        this.partieCourante = partie;
+    }
+
+    public void setNum(int num){
+        this.num = num;
+    }
+
+    public int getNum(){
+        return this.num;
+    }
+
     public Partie getPartieCourante() {
         return partieCourante;
     }
 
-    public int checkExistence(){
-        BufferedReader br;
-        int ln = 0;
-        boolean exist = false;
-        try {
-            br = new BufferedReader(new FileReader("src/main/java/com/example/tp/listJoueurs.txt"));
-            String line = "%start%";
-            try {
-                while (line != null && !exist) {
-                    if ((this.nom).equals(line)) {
-                        exist = true;
-                    } else {
-                        line = br.readLine();
-                        ln++;
-                    }
-                }
-            } catch (IOException a) {
-                a.printStackTrace();
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("Une erreur a été rencontrée !");
-            e.printStackTrace();
-        }
-        if(exist){
-            return ln;
-        }
-        else{
-            return 0;
-        }
-    }
+    // public int checkExistence(){
+    //     BufferedReader br;
+    //     int ln = 0;
+    //     boolean exist = false;
+    //     try {
+    //         br = new BufferedReader(new FileReader("src/main/java/com/example/tp/listJoueurs.txt"));
+    //         String line = "%start%";
+    //         try {
+    //             while (line != null && !exist) {
+    //                 if ((this.nom).equals(line)) {
+    //                     exist = true;
+    //                 } else {
+    //                     line = br.readLine();
+    //                     ln++;
+    //                 }
+    //             }
+    //         } catch (IOException a) {
+    //             a.printStackTrace();
+    //         }
+    //     } catch (FileNotFoundException e) {
+    //         System.out.println("Une erreur a été rencontrée !");
+    //         e.printStackTrace();
+    //     }
+    //     if(exist){
+    //         return ln;
+    //     }
+    //     else{
+    //         return 0;
+    //     }
+    // }
 
 }
 

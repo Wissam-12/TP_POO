@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Plateau {
     private Cases[] plateau = new Cases[100];
-    public Plateau(){
+
+    public void newPlateau(){
         Random rand = new Random();
         int pos;
         List<Integer> cases = new ArrayList<Integer>(100);
@@ -85,5 +86,9 @@ public class Plateau {
 
     public Cases[] getPlateau(){
         return this.plateau;
+    }
+
+    public void setPlateau(Cases[] plat){
+        this.plateau = plat;
     }
 }
