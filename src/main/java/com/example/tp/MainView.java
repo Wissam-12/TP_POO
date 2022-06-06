@@ -65,7 +65,7 @@ public class MainView {
             public void run() {
                 deplacement = d.rollDice(dice1, dice2);
                 posVirtuel = joueur.getPosition()+deplacement;
-                joueur.setPosition(joueur.getPosition()+deplacement);
+                /*joueur.setPosition(joueur.getPosition()+deplacement);
                     if(joueur.getPosition()>99){
                             int difference = joueur.getPosition() - 99;
                             joueur.setPosition(99-difference);
@@ -97,7 +97,7 @@ public class MainView {
                     joueur.setMeilleurScore(joueur.getScoreActuel());
                     record.setText("Record : "+Integer.toString(joueur.getMeilleurScore()));
                 }
-                roll.setDisable(false);
+                roll.setDisable(false);*/
                 System.out.println(joueur.getNom()+"'s new position is : "+Integer.toString(joueur.getPosition()));
             }
         };
@@ -117,25 +117,48 @@ public class MainView {
 
     @FXML
     void clickCase(ActionEvent event){
-        /*Button b = (Button) event.getTarget();
+        Button b = (Button) event.getTarget();
         String s = b.getId();
         int id = Integer.parseInt(s.substring(1));
         if ((id <= posVirtuel)&(id != joueur.getPosition())){
-            joueur.setPosition(id);
-            pion.setLayoutX(b.getLayoutX()-4);
-            pion.setLayoutY(b.getLayoutY()-2);
-            plateau[joueur.getPosition()].actionAssocie(joueur);
-            score.setText(Integer.toString(joueur.getScoreActuel()));
-            if (joueur.getScoreActuel()> joueur.getMeilleurScore()){
-                joueur.setMeilleurScore(joueur.getScoreActuel());
-                record.setText("Record : "+Integer.toString(joueur.getMeilleurScore()));
-            }
-            roll.setDisable(false);
+           joueur.setPosition(id);
+                    if((posVirtuel>99)&(joueur.getPosition()>99)){
+                            int difference = joueur.getPosition() - 99;
+                            joueur.setPosition(99-difference);
+                        pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                        pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                    }
+                if (plateau[joueur.getPosition()].couleur==Couleur.Orange){
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
+                if (plateau[joueur.getPosition()].couleur==Couleur.Vert){
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
+                if (plateau[joueur.getPosition()].couleur==Couleur.Rouge){
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
+                else {
+                    plateau[joueur.getPosition()].actionAssocie(joueur);
+                    pion.setLayoutX(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutX()-5);
+                    pion.setLayoutY(((Button)scene.lookup("#c" + joueur.getPosition())).getLayoutY()-2);
+                }
+                score.setText(Integer.toString(joueur.getScoreActuel()));
+                if (joueur.getScoreActuel()> joueur.getMeilleurScore()){
+                    joueur.setMeilleurScore(joueur.getScoreActuel());
+                    record.setText("Record : "+Integer.toString(joueur.getMeilleurScore()));
+                }
+                roll.setDisable(false);
         }
         else {
             alert.setTitle("Wrong destination");
             alert.setContentText("Your new position should be the position number "+posVirtuel);
-        }*/
+        }
 
 
     }
