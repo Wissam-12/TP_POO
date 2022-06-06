@@ -64,10 +64,6 @@ public class Joueur {
         return this.started;
     }
 
-    public void setPartieCourrante(Partie partie){
-        this.partieCourante = partie;
-    }
-
     public void setNum(int num){
         this.num = num;
     }
@@ -111,5 +107,8 @@ public class Joueur {
     //     }
     // }
 
+    public void setPartieCourrante(Partie partie) {
+        this.partieCourante = partie;
+    }
 }
 
