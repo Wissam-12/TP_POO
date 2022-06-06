@@ -1,8 +1,8 @@
 package com.example.tp;
 
 public class caseImage extends caseQuestion {
-    private int image1,image2,image3,image4;
-    private String mot;
+    private String image0,image1,image2,image3;
+    private String question;
     private int rep;
     private int bonneRep;
     // private int nombreDeCase = 0 ;
@@ -14,7 +14,6 @@ public class caseImage extends caseQuestion {
     }
     @Override
     public void actionAssocie(Joueur J) {
-        System.out.println(this.mot);
         if (rep == bonneRep) gagner(J);
     }
     public void gagner(Joueur J){
@@ -29,6 +28,46 @@ public class caseImage extends caseQuestion {
     @Override
     public void setVisited(boolean i) {
         this.visited = i ;
+    }
+
+    public void setImage0(String image){
+        this.image0 = image;
+    }
+
+    public void setImage1(String image){
+        this.image1 = image;
+    }
+
+    public void setImage2(String image){
+        this.image2 = image;
+    }
+
+    public void setImage3(String image){
+        this.image3 = image;
+    }
+
+    public String getImage0(){
+        return this.image0;
+    }
+
+    public String getImage1(){
+        return this.image1;
+    }
+
+    public String getImage2(){
+        return this.image2;
+    }
+
+    public String getImage3(){
+        return this.image3;
+    }
+
+    public String getQuestion(){
+        return this.question;
+    }
+
+    public void setQuestion(String question){
+        this.question = question;
     }
 
     public void test(){

@@ -89,5 +89,8 @@ public class Joueur {
         }
     }
 
+    public void setPartieCourrante(Partie partie) {
+        this.partieCourante = partie;
+    }
 }
 

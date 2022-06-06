@@ -3,7 +3,6 @@ package com.example.tp;
 import java.util.Scanner;
 public class caseDefinition extends caseQuestion {
     private String question;
-    private String reponse;
     private String bonneRep;
     // private static int nombreDeCase = 0;
     public caseDefinition (int i){
@@ -15,12 +14,29 @@ public class caseDefinition extends caseQuestion {
 
     @Override
     public void actionAssocie(Joueur J) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Définition : "+ this.question);
-        this.reponse = sc.nextLine();
-        if (reponse.equalsIgnoreCase(bonneRep)) gagner(J);
-        else perdu(J);
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Définition : "+ this.question);
+        // this.reponse = sc.nextLine();
+        // if (reponse.equalsIgnoreCase(bonneRep)) gagner(J);
+        // else perdu(J);
     }
+
+    public String getQuestion(){
+        return this.question;
+    }
+
+    public void setQuestion(String question){
+        this.question = question;
+    }
+
+    public void setBonneRep(String answer){
+        this.bonneRep = answer;
+    }
+
+    public String getBonneRep(){
+        return this.bonneRep;
+    }
+
     public void gagner(Joueur J){
         J.setScoreActuel(J.getScoreActuel() + 20);
         J.setPosition(J.getPosition() + 4);
@@ -43,8 +59,4 @@ public class caseDefinition extends caseQuestion {
     public void test(){
         System.out.println("Cases def");
     }
-
-    // public static int getNombreDeCase() {
-    //     return nombreDeCase;
-    // }
 }
